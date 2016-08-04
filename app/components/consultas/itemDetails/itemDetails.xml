@@ -1,0 +1,74 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:widgets="utils/widgets" navigatedTo="navigatedTo">
+    <Page.actionBar>
+        <widgets:action-bar />
+    </Page.actionBar>
+
+    <ScrollView>
+        <StackLayout>
+            
+            <StackLayout>
+                <Label text="{{ Numero }}" cssClass="title" />
+                <Button text="Dados" cssClass="form-buttons" />
+            </StackLayout>
+
+            <StackLayout>
+                
+                <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item">
+                    <Label text="Classe" cssClass="label" col="0" row="1"  />
+                    <TextField col="1" row="1" editable="false" text="Procedimento Ordinário"/>
+                </GridLayout>
+                <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+                <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item">
+                    <Label text="Área" cssClass="label" col="0" row="1" />
+                    <TextField col="1" row="1" editable="false" text="Cível"/>
+                </GridLayout>
+                <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+                <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item">
+                    <Label text="Assunto" cssClass="label" col="0" row="1" />
+                    <TextField col="1" row="1" editable="false" text="Contratos Bancários"/>
+                </GridLayout>
+                <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+                <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item">
+                    <Label text="Distribuição" cssClass="label" col="0" row="1" />
+                    <TextField col="1" row="1" editable="false" text="15/09/2015 às 15:03"/>
+                </GridLayout>
+                <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+                <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item">
+                    <Label text="Controle" cssClass="label" col="0" row="1" />
+                    <TextField col="1" row="1" editable="false" text="2015/000028"/>
+                </GridLayout>
+                <StackLayout cssClass="form-item-border" height="1"></StackLayout>
+                <StackLayout>
+                    <Button text="Movimentação" cssClass="form-buttons" />
+                    <TextView editable="false" text="15:30 - Remetirods os Autos p Tribunal de Justiça / Colégio Recursal" />
+                    <TextView editable="false" text="15:30 - Remetirods os Autos p Tribunal de Justiça / Colégio Recursal" />
+                    <TextView editable="false" text="15:30 - Remetirods os Autos p Tribunal de Justiça / Colégio Recursal" />
+                    <TextView editable="false" text="15:30 - Remetirods os Autos p Tribunal de Justiça / Colégio Recursal" />
+                    <TextView editable="false" text="15:30 - Remetirods os Autos p Tribunal de Justiça / Colégio Recursal" />
+                    <TextView editable="false" text="15:30 - Remetirods os Autos p Tribunal de Justiça / Colégio Recursal" />
+                    <TextView editable="false" text="15:30 - Remetirods os Autos p Tribunal de Justiça / Colégio Recursal" />
+                    <TextView editable="false" text="15:30 - Remetirods os Autos p Tribunal de Justiça / Colégio Recursal" />
+                    <TextView editable="false" text="15:30 - Remetirods os Autos p Tribunal de Justiça / Colégio Recursal" />
+                </StackLayout>
+                <StackLayout>
+                    <Button text="Pasta Digital" cssClass="form-buttons" />
+                    <TextView editable="false" text="Informe a senha do processo. Caso não a possua e seja parte do processo, dirija-se ao cartório para solicitá-la." />
+                    <GridLayout columns="*, *" rows="auto, auto" cssClass="form-item">
+                        <Label text="CPF" cssClass="label" col="0" row="0" />
+                        <TextField col="1" row="0" />
+                        <Label text="Senha do Processo" cssClass="label" col="0" row="1" />
+                        <TextField col="1" row="1" />
+                        
+                    </GridLayout>
+                    <GridLayout columns="*, *" rows="auto" cssClass="form-buttons-ok">
+
+                        <widgets:button col="1" text="Accessar" />
+
+                    </GridLayout>                
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+
+</Page>

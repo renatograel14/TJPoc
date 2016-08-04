@@ -1,0 +1,23 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:widgets="utils/widgets" loaded="pageLoaded">
+    <Page.actionBar>
+        <widgets:action-bar />
+        
+    </Page.actionBar>
+        <!-- additional view content -->
+        <!-- START_CUSTOM_CODE_homeView -->
+        <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+        <StackLayout>
+        <ListView row="1" items="{{ HomeItens }}" itemTap="onHomeItemTap">
+                <ListView.itemTemplate>
+                        <StackLayout col="1" cssClass="padded-label-stack">
+                            <GridLayout columns="100, *" cssClass="padded-label">
+                                <Label cssClass="list-icon km-icon"  text="{{ icon }}" />
+                                <Label cssClass="list-title" col="1" text="{{ title }}" textWrap="true" />
+                            </GridLayout>
+                        </StackLayout>
+                        <!-- additional view content -->
+                </ListView.itemTemplate>
+            </ListView>
+        <!-- END_CUSTOM_CODE_homeView -->
+        </StackLayout>  
+    </Page>
