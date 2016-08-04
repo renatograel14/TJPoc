@@ -12,7 +12,10 @@
                         <StackLayout col="1" cssClass="padded-label-stack">
                             <GridLayout columns="100, *" cssClass="padded-label">
                                 <Label cssClass="list-icon km-icon"  text="{{ icon }}" />
-                                <Label cssClass="list-title" col="1" text="{{ title }}" textWrap="true" />
+                                <StackLayout col="1">
+                                    <Label cssClass="title-label"  text="{{ type }}" textWrap="true" />                                
+                                    <Label cssClass="list-title"   text="{{ title }}" textWrap="true" />
+                                </StackLayout>
                             </GridLayout>
                         </StackLayout>
                         <!-- additional view content -->

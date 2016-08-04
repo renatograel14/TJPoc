@@ -7,9 +7,30 @@ ViewModel = new Observable({
 
     pageTitle: 'TJSPMóvel',
     HomeItens: [{
-        "title": "Consulta de Processos",
+        "type": "Consulta de Processos",
+        "title": "Por Nome",
         "moduleName": "components/consultas/consultas",
         "icon": "\ue0e9"
+    },{
+        "type": "Consulta de Processos",        
+        "title": "Por Nome da Parte",
+        "moduleName": "components/consultas/consultas",
+        "icon": "\ue0e9"
+    },{
+        "type": "Noticias",        
+        "title": "Ultimas Noticias",
+        "moduleName": "components/noticias/noticias",
+        "icon": "\ue204"
+    },{
+        "type": "Serviços",
+        "title": "Certidão",        
+        "moduleName": "components/consultas/consultas",
+        "icon": "\ue0da"
+    },{
+        "type": "Serviços",
+        "title": "Família",        
+        "moduleName": "components/consultas/consultas",
+        "icon": "\ue0da"
     }],
     // additional properties
 });

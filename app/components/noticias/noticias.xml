@@ -6,6 +6,7 @@
     <StackLayout>
        
         <GridLayout rows="auto, *">
+            <ActivityIndicator row="1" busy="{{ isLoadingSlides }}" />        
             <Slides:SlideContainer row="0" id="slides" pageIndicators="true" indicatorsColor="#fff" loaded="onSlideContainerLoaded">
             </Slides:SlideContainer>
             <ListView row="1" items="{{ listItems }}" itemTap="onListViewItemTap">
