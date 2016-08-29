@@ -6,6 +6,7 @@
 .slide-2{
   background-color: darkcyan;
 }
+
 .slide-3{
   background-color: darkgreen;
 }
@@ -16,7 +17,6 @@
 .slide-5{
   background-color: darkslategray;
 }
-
 
 .km-icon {
     font-family: 'kendoui';
@@ -36,6 +36,11 @@ image,
 activityindicator {
     horizontal-align: center;
     vertical-align: center;
+}
+
+.image-slide {
+    height: 200;
+    horizontal-align: center;
 }
 
 label,
@@ -73,6 +78,7 @@ switch {
     font-size: 18px;
     background-color: darkslateblue;
     color: white;
+    height: 80;
 }
 
 .form-link {
@@ -114,6 +120,12 @@ switch {
 .title-label {
     padding: 0 0 12 0;
     font-weight: bold;
+}
+
+.session-title {
+    padding: 12;
+    font-weight: bold;
+    background-color: #ccc;
 }
 
 .about-image {

@@ -1,0 +1,20 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:widgets="utils/widgets" navigatedTo="navigatedTo">
+	<Page.actionBar>
+        <widgets:action-bar />
+    </Page.actionBar>
+    
+		<StackLayout>
+			<StackLayout>
+				<Label text="{{ Numero }}" cssClass="title" />
+			</StackLayout>
+			<ListView class="list" items="{{ digitalFolder }}" >
+				<ListView.itemTemplate>
+					<GridLayout cssClass="list-item" columns="auto, *">
+						<TextField editable="false" cssClass="list-title" text="{{ title }}" textWrap="true" />                        
+						<Label   col="1" cssClass="list-icon km-icon" text="{{ icon }}" />
+					</GridLayout>
+				</ListView.itemTemplate>
+			</ListView>
+
+		</StackLayout>
+</Page>

@@ -45,24 +45,8 @@ var slides = require('nativescript-slides/nativescript-slides');
 
 function onSlideContainerLoaded(args) {
     var slideContainer = args.object;
-    slideContainer.addChild(getSlide("teste", "https://bs1.cdn.telerik.com/image/v1/ng2phf9jo8zf5lzs/resize=w:300,h:200,fill:cover/https://bs1.cdn.telerik.com/v1/ng2phf9jo8zf5lzs/2a85c640-5a5c-11e6-a2dd-9509f1afe86a?1470326265567"));
-    slideContainer.addChild(getSlide("teste", "https://bs1.cdn.telerik.com/image/v1/ng2phf9jo8zf5lzs/resize=w:300,h:200,fill:cover/https://bs1.cdn.telerik.com/v1/ng2phf9jo8zf5lzs/2a85c640-5a5c-11e6-a2dd-9509f1afe86a?1470326265567"));
-    slideContainer.addChild(getSlide("teste", "https://bs1.cdn.telerik.com/image/v1/ng2phf9jo8zf5lzs/resize=w:300,h:200,fill:cover/https://bs1.cdn.telerik.com/v1/ng2phf9jo8zf5lzs/2a85c640-5a5c-11e6-a2dd-9509f1afe86a?1470326265567"));
-    slideContainer.addChild(getSlide("teste", "https://bs1.cdn.telerik.com/image/v1/ng2phf9jo8zf5lzs/resize=w:300,h:200,fill:cover/https://bs1.cdn.telerik.com/v1/ng2phf9jo8zf5lzs/2a85c640-5a5c-11e6-a2dd-9509f1afe86a?1470326265567"));
-
-  
-    // service.getAllRecords()
-    //     .then(function (result) {
-
-    //         result.forEach(function (item) {
-    //             slideContainer.addChild(getSlide(item.Descricao, item.Imagem));
-    //         });
-
-    //         viewModel.set('isLoadingSlides', false);
-    //     })
-    //     .catch(function onCatch() {
-    //         viewModel.set('isLoadingSlides', false);
-    //     });
+    slideContainer.addChild(getSlide("Faça seus testes!", "https://bs1.cdn.telerik.com/image/v1/ng2phf9jo8zf5lzs/https://bs3.cdn.telerik.com/v1/ng2phf9jo8zf5lzs/d323d860-5b28-11e6-b87d-f9326cc2fa1a?1470415847461"));
+    slideContainer.addChild(getSlide("Santos recebe terceiro workshop do Projeto 'Justiça Bandeirante'", "https://bs1.cdn.telerik.com/image/v1/ng2phf9jo8zf5lzs/https://bs1.cdn.telerik.com/v1/ng2phf9jo8zf5lzs/2a85c640-5a5c-11e6-a2dd-9509f1afe86a?1470415884329"));
 }
 
 function getSlide(text, image) {
@@ -71,8 +55,8 @@ function getSlide(text, image) {
         Image = new ImageModule.Image();
 
     Image.src = image;
+    Image.cssClass = 'image-slide';
     Label.text = text;
-    Label.editable = false;
     slide.addChild(Image);    
     slide.addChild(Label);
 

@@ -6,20 +6,19 @@
     <StackLayout>
         <Label text="Por número de processo" />
         <SearchBar text="{{ searchField }}" hint="Digite o número do processo" id="search"/>
-        <Button text="CONSULTAR" tap="{{ goSearch }}" />
+        <GridLayout columns="*, *, *" rows="auto" cssClass="form-buttons-ok">
+            <Button text="CONSULTAR" col="1" tap="{{ goSearch }}" />
+        </GridLayout>
         <GridLayout rows="auto, *">
             <Label text="{{ resultSearch }}" />
             <ListView row="1" items="{{ listItems }}" itemTap="onListViewItemTap">
                 <ListView.itemTemplate>
                     <StackLayout>
                         <GridLayout columns="*" cssClass="padded-label">
-
-
                             <StackLayout col="0" cssClass="padded-label-stack">
                                 <Label text="{{ Numero }}" cssClass="title-label" textWrap="true" />
                                 <Label text="{{ Assunto }}" textWrap="true" />
                             </StackLayout>
-
                         </GridLayout>
                         <!-- additional view content -->
                     </StackLayout>

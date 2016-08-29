@@ -33,6 +33,8 @@ function onListViewItemTap(args) {
 }
 exports.onListViewItemTap = onListViewItemTap;
 
+
+
 function flattenLocationProperties(dataItem) {
     var propName, propValue,
         isLocation = function (value) {
